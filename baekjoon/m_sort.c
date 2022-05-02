@@ -27,7 +27,7 @@ int main() {
     return 0;
 }
 
-// 분할 & 정복 & 합병
+// 분할 & 합병
 void m_sort(int arr[], int left, int right) {
     if(left == right) return;
     int mid = (left + right) /2;
@@ -37,7 +37,7 @@ void m_sort(int arr[], int left, int right) {
     merge(arr, left, mid, right);
 }
 
-// 실제 정렬(리스트 합병)
+// 합병
 void merge(int arr[], int left, int mid, int right) {
     int L, R, k, i;
     L = left;
